@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  background-color: white;
+  font-family: 'ABeeZee';
+  margin: 42px 50px;
+  transition: 0.2s;
+}
+
+.buttons {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: white;
+}
+#btn1 {
+  background: #1f9ab3;
+}
+#btn2 {
+  background: #8251a3;
+}
+#btn3 {
+  background: #aa584a;
+}
+#btn4 { 
+  background: #45c45a;
+}
+#btn5 {
+  background: #ecdc4b;
+}
+#btn6 {
+  background: #264291;
+}
+
+.boxes {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 90px;
+  column-gap: 10px;
+}
+.box {
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  //background-color: #1FC2AE;
+  background-color: rgb(31, 194, 174);
+  //flex: 1 0 33%;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+#btn7 {
+  background: #18D5E1;
+}
+#input {
+  padding: 13px 15px 15px;
+  border: 2px solid #E5E7EB;
+  border-radius: 6px;
+}
+
+#text {
+  transition: 0.15s;
+}
