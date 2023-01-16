@@ -27,12 +27,15 @@ btn1.addEventListener('click', () => {
         box1.style.backgroundColor = getComputedStyle(box2).backgroundColor 
     }
 })
+
 btn2.addEventListener('click', () => {
     box2.innerHTML = 'SUCCESS'
 })
+
 btn3.addEventListener('click', () => {
     box3.style.visibility = 'hidden'
 })
+
 btn4.addEventListener('click', () => {
     if (box4.style.visibility == 'hidden') {
         box4.style.visibility = 'visible'
@@ -40,11 +43,13 @@ btn4.addEventListener('click', () => {
         box4.style.visibility = 'hidden'
     }
 })
+
 let colors = ['coral', 'cyan', 'deepskyblue', 'greenyellow', 'lightsalmon']
 btn5.addEventListener('click', () => {
     let new_color = 
     box5.style.background = colors[Math.round(Math.random()*colors.length)]
 })
+
 btn6.addEventListener('click', () => {
     let num = parseInt(box6.innerHTML)
     let counter = setInterval(() => {
@@ -55,6 +60,7 @@ btn6.addEventListener('click', () => {
         }
     }, 3000)
 })
+
 btn7.addEventListener('click', () => {
     if (document.body.style.backgroundColor == 'black') {
         document.body.style.backgroundColor = 'white'  
@@ -86,9 +92,11 @@ box1.addEventListener('mouseenter', () => {
     box1_prev_color = getComputedStyle(box1).backgroundColor
     box1.style.backgroundColor = 'red'
 })
+
 box1.addEventListener('mouseleave', () => {
     box1.style.backgroundColor = box1_prev_color
 })
+
 let counter = setInterval(()=>{})
 box5.addEventListener('mouseenter', () => {
     let num = parseInt(box5.innerHTML)
@@ -100,6 +108,7 @@ box5.addEventListener('mouseenter', () => {
         }
     }, 1000)
 })
+
 box5.addEventListener('mouseleave', () => {
     clearInterval(counter)
     box5.innerHTML = '0'
